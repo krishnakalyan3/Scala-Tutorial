@@ -29,6 +29,21 @@ object lesson1 {
   
   "Hello".distinct                                //> res9: String = Helo
   "Hello".length                                  //> res10: Int = 5
+  "Hello".apply(4)                                //> res11: Char = o
   // () is only required for mutators
-  
+  val b:BigInt = 21                               //> b  : scala.math.BigInt = 21
+ 	b.pow(100)                                //> res12: scala.math.BigInt = 1666976484396337359195972108050766529167300667828
+                                                  //| 9510143313654693621330290703278666330330646324269063809009180450962126312063
+                                                  //| 55582001
+  sqrt(10)   * sqrt(10)                           //> res13: Double = 10.000000000000002
+  1.to(10)                                        //> res14: scala.collection.immutable.Range.Inclusive = Range(1, 2, 3, 4, 5, 6, 
+                                                  //| 7, 8, 9, 10)
+  1.to(10).map(sqrt(_))                           //> res15: scala.collection.immutable.IndexedSeq[Double] = Vector(1.0, 1.4142135
+                                                  //| 623730951, 1.7320508075688772, 2.0, 2.23606797749979, 2.449489742783178, 2.6
+                                                  //| 457513110645907, 2.8284271247461903, 3.0, 3.1622776601683795)
+  6.*(7)                                          //> res16: Int(42) = 42
+  "bda".permutations.toArray                      //> res17: Array[String] = Array(bda, bad, dba, dab, abd, adb)
+  "ABC".sum                                       //> res18: Char = Æ
+  "A"+"B"+"C"                                     //> res19: String = ABC
+  ("A"+"B"+"C")                                   //> res20: String = ABC
 }
